@@ -1,0 +1,43 @@
+<div class="main-div">
+  <div class="music-player-section">
+    <div class="title">Music</div>
+
+    <div class="image-section">
+      <img class="img" src={{imageUrl}} />
+    </div>
+
+    <div class="music-desc">
+      <p>{{sName}}</p>
+      <p style="color: red">{{mName}}</p>
+    </div>
+
+    <div class="music-buttons">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="pause" class="icon" (click)="pause()"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="skip_previous" class="icon" (click)="previous()"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="play_circle_outline" class="icon" (click)="play()"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="skip_next" class="icon" (click)="next()"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="stop" class="icon" (click)="stop()"></mat-icon>
+    </div>
+
+
+  </div>
+
+  <div class="music-list-section">
+    <div class="music-list-title">
+      <h2>Browse Your Songs</h2>
+    </div>
+
+    <div class="m-list" *ngFor="let file of files" (click)="openFile(file.url , file.name , file.movie , file.imgurl)">
+      <div class="m-image">
+        <img class="m-img" src={{file.imgurl}} />
+      </div>
+
+      <div class="m-desc">
+        <div class="m-song">{{file.name}}</div>
+        <div class="m-movie">{{file.movie}}</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

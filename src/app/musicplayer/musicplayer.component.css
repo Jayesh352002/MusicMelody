@@ -1,0 +1,160 @@
+.main-div{
+  display: flex;
+  flex-direction: row;
+
+  width: 750px;
+  height: 480px;
+
+  background-color: black;
+
+  margin-top: 40px;
+
+  border-style: solid;
+  border-color: black;
+
+  padding: 15px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.music-player-section{
+  width: 370px;
+  height: 400px;
+
+  align-items: center;
+
+  background-color: black;
+
+  margin-top: 40px;
+
+  border-style: solid;
+  border-color: black;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.image-section{
+  width: 200px;
+  height: 220px;
+
+  margin-left: 20%;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  border-style: solid;
+  border-color: black;
+
+  margin-top: 30px;
+
+}
+
+.img{
+  width: 200px;
+  height: 220px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.music-desc{
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.music-list-title{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.music-list-section{
+  padding: 15px;
+}
+
+.song-list{
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.song-list li{
+  margin-top: 25px;
+}
+
+.m-list{
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+  padding: 10px;
+}
+
+.m-desc{
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin-left: 12px;
+}
+
+.m-song{
+  font-size: 20px;
+  color: white;
+}
+
+.m-movie{
+  font-size: 12px;
+  color: white;
+}
+
+.m-img{
+  width: 45px;
+  height: 45px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+
+.music-buttons{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-left: 73px;
+  margin-top: 31px;
+}
+
+.icon{
+  color: white;
+  margin-left: 15px;
+}

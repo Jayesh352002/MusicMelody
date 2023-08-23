@@ -1,0 +1,19 @@
+.music-list-section{
+  width: 250px;
+  height: 480px;
+
+  background-color: black;
+
+  margin-top: 40px;
+  margin-left: 100px;
+
+  border-style: solid;
+  border-color: black;
+
+  padding: 20px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
