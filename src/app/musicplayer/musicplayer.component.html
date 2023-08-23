@@ -1,6 +1,6 @@
 <div class="main-div">
   <div class="music-player-section">
-    <div class="title">Music</div>
+    <div class="title">MusicMelody</div>
 
     <div class="image-section">
       <img class="img" src={{imageUrl}} />
@@ -9,6 +9,11 @@
     <div class="music-desc">
       <p>{{sName}}</p>
       <p style="color: red">{{mName}}</p>
+    </div>
+
+    <div class="volume-div">
+      <mat-icon fontIcon="volume_up" class="icon"></mat-icon>
+      <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
     </div>
 
     <div class="music-buttons">

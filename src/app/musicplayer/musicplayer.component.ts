@@ -12,6 +12,11 @@ export class MusicplayerComponent {
   sName : any = 'CHALEYA';
   mName : any = 'Jawan';
   imageUrl : any ='../../assets/songs/s2.jpg';
+  Surl: any =  '../../assets/songs/music1.mp3';
+
+  currentFile: any = {};
+
+  flag : any = 0 ;
 
   files = [
     {
@@ -40,6 +45,10 @@ export class MusicplayerComponent {
     },
   ];
 
+  constructor(){
+
+  }
+
   openFile(url:any , name:any , movie:any , image:any){
     this.audio.src=url;
     this.sName = name ;
@@ -49,10 +58,33 @@ export class MusicplayerComponent {
     this.audio.load();
     this.audio.play();
 
+    this.currentFile = url ;
+
+    this.flag = 1 ;
+
+  }
+
+  isFirstPlaying() {
+    return this.currentFile.index === 0;
+  }
+
+  isLastPlaying() {
+    return this.currentFile.index === this.files.length - 1;
   }
 
   play() {
-    this.audio.play();
+
+    if(this.flag==1)
+    {
+      this.audio.play();
+    }
+    else
+    {
+      this.audio.src=this.Surl;
+      this.audio.load();
+      this.audio.play();
+    }
+
   }
 
   pause() {
@@ -65,11 +97,14 @@ export class MusicplayerComponent {
   }
 
   previous(){
-    this.audio.pause();
-
+    alert("Sorry... This Feature is not Working !!! ");
   }
 
   next(){
-    this.audio.pause();
+    alert("Sorry... This Feature is not Working !!! ");
+  }
+
+  setVolume(event:any){
+    this.audio.volume = event.target.value;
   }
 }
